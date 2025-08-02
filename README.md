@@ -28,19 +28,33 @@ This is a static website project built using **HTML**, **CSS**, and **JavaScript
 ## 🗂️ Folder Structure
 
 bsc-cs-department/
+
 ├── index.html
+
 ├── style.css
+
 ├── script.js
+
 ├── contact.html
+
 ├── courses.html
+
 ├── department_team.html
+
 ├── labs.html
+
 ├── lab_gallery.html
+
 ├── student-corner.html
+
 ├── syllabus.html
+
 ├── timetable.html
+
 ├── images/
+
 ├── Syllabus/
+
 └── README.md
 
 
