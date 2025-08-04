@@ -2,207 +2,193 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lab Gallery - B.Sc. Computer Science</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lab Gallery - B.Sc. Computer Science</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-   
-<!-- Header Top -->
-<div class="header-top">
-  <img src="images/logo.png" alt="College Logo" class="logo-left" />
+  <div class="header-top">
+    <img src="images/logo.png" alt="College Logo" class="logo-left" />
 
-  <div class="header-texts">
-    <h2 class="college-name">Shahada Taluka Educational Society and Co-Op. Educational Society’s Ltd.</h2>
-    <h1 class="dept-title-left">B.Sc. Computer Science Department</h1>
+    <div class="header-texts">
+      <h2 class="college-name">Shahada Taluka Educational Society and Co-Op. Educational Society’s Ltd.</h2>
+      <h1 class="dept-title-left">B.Sc. Computer Science Department</h1>
+    </div>
+
+    <div class="header-controls">
+      <div id="date-time" class="date-time-3d">Loading time...</div>
+    </div>
   </div>
 
-  <div class="header-controls">
-    <div id="date-time" class="date-time-3d">Loading time...</div>
-  </div>
-</div>
+  <header class="navbar-section">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="department_team.html">Department Team</a></li>
+
+        <li class="dropdown">
+          <a href="#" id="lab-toggle">Lab</a>
+          <ul class="dropdown-menu" id="lab-menu">
+            <li><a href="labs.html">Lab Information</a></li>
+            <li><a href="lab_gallery.html">Lab Gallery</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" id="downloads-toggle">Student</a>
+          <ul class="dropdown-menu" id="downloads-menu">
+            <li><a href="syllabus.html">Syllabus</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="student-corner.html">Student Corner</a></li>
+          </ul>
+        </li>
 
 
 
-<!-- Navbar Section -->
-<header class="navbar-section">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="courses.html">Courses</a></li>
-       <li><a href="department_team.html">Department Team</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Lab with Dropdown -->
-     <li class="dropdown">
-  <a href="#" id="lab-toggle">Lab</a>
-  <ul class="dropdown-menu" id="lab-menu">
-    <li><a href="labs.html">Lab Information</a></li>
-    <li><a href="lab_gallery.html">Lab Gallery</a></li>
-  </ul>
-</li>
-      <!-- Downloads with Dropdown -->
-     <li class="dropdown">
-  <a href="#" id="downloads-toggle">Student</a>
-  <ul class="dropdown-menu" id="downloads-menu">
-    <li><a href="syllabus.html">Syllabus</a></li>
-    <li><a href="timetable.html">Timetable</a></li>
-    <li><a href="student-corner.html">Student Corner</a></li>
-  </ul>
-</li>
+  <section class="video-section">
+    <h2 class="section-title">Virtual Tour of Our Computer Lab</h2>
+    <div class="video-container">
+      <video controls>
+        <source src="images/Lab Gallery/lab-video.mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
 
-
-
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-</header>
-
-    <!-- ✅ Lab Video -->
-    <section class="video-section">
-        <h2 class="section-title">Virtual Tour of Our Computer Lab</h2>
-        <div class="video-container">
-            <video controls>
-                <source src="images/Lab Gallery/lab-video.mp4" />
-                Your browser does not support the video tag.
-            </video>
-        </div>
-    </section>
-
-   <!-- ✅ Lab Image Gallery -->
-<section class="gallery-section">
+  <section class="gallery-section">
     <h2 class="section-title">Lab Gallery</h2>
     <div class="gallery-grid">
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab1.jpg" alt="Lab Image 1" onclick="openModal(this.src)" />
-            <p class="caption">Computer Lab</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab2.jpg" alt="Lab Image 2" onclick="openModal(this.src)" />
-            <p class="caption">HOD Office</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab3.jpg" alt="Lab Image 3" onclick="openModal(this.src)" />
-            <p class="caption">Server Room</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab4.jpg" alt="Lab Image 4" onclick="openModal(this.src)" />
-            <p class="caption">Lab No.1</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab5.jpg" alt="Lab Image 5" onclick="openModal(this.src)" />
-            <p class="caption">Lab No.2</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab6.jpg" alt="Lab Image 6" onclick="openModal(this.src)" />
-            <p class="caption">Lab No.3,4</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab7.jpg" alt="Lab Image 7" onclick="openModal(this.src)" />
-            <p class="caption">Lab No.3</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab8.jpg" alt="Lab Image 8" onclick="openModal(this.src)" />
-            <p class="caption">Lab No.4</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab9.jpg" alt="Lab Image 9" onclick="openModal(this.src)" />
-            <p class="caption">Computer Lab</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab10.jpg" alt="Lab Image 10" onclick="openModal(this.src)" />
-            <p class="caption">WiFi</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab11.jpg" alt="Lab Image 11" onclick="openModal(this.src)" />
-            <p class="caption">Stabilizer</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab12.jpg" alt="Lab Image 12" onclick="openModal(this.src)" />
-            <p class="caption">Projecter</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab13.jpg" alt="Lab Image 13" onclick="openModal(this.src)" />
-            <p class="caption">Lightex Fire</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab14.jpg" alt="Lab Image 14" onclick="openModal(this.src)" />
-            <p class="caption">FY.B.Sc Class Room</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab15.jpg" alt="Lab Image 15" onclick="openModal(this.src)" />
-            <p class="caption">SY.B.Sc Class Room</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab16.jpg" alt="Lab Image 16" onclick="openModal(this.src)" />
-            <p class="caption">TY.B.Sc Class Room</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab17.jpg" alt="Lab Image 17" onclick="openModal(this.src)" />
-            <p class="caption">Details Configuration Of Computer</p>
-        </div>
-        <div class="gallery-item">
-            <img src="images/Lab Gallery/lab18.jpg" alt="Lab Image 18" onclick="openModal(this.src)" />
-            <p class="caption">Details Configuration Of Computer</p>
-        </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab1.jpg" alt="Lab Image 1" onclick="openModal(this.src)" />
+        <p class="caption">Computer Lab</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab2.jpg" alt="Lab Image 2" onclick="openModal(this.src)" />
+        <p class="caption">HOD Office</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab3.jpg" alt="Lab Image 3" onclick="openModal(this.src)" />
+        <p class="caption">Server Room</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab4.jpg" alt="Lab Image 4" onclick="openModal(this.src)" />
+        <p class="caption">Lab No.1</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab5.jpg" alt="Lab Image 5" onclick="openModal(this.src)" />
+        <p class="caption">Lab No.2</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab6.jpg" alt="Lab Image 6" onclick="openModal(this.src)" />
+        <p class="caption">Lab No.3,4</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab7.jpg" alt="Lab Image 7" onclick="openModal(this.src)" />
+        <p class="caption">Lab No.3</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab8.jpg" alt="Lab Image 8" onclick="openModal(this.src)" />
+        <p class="caption">Lab No.4</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab9.jpg" alt="Lab Image 9" onclick="openModal(this.src)" />
+        <p class="caption">Computer Lab</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab10.jpg" alt="Lab Image 10" onclick="openModal(this.src)" />
+        <p class="caption">WiFi</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab11.jpg" alt="Lab Image 11" onclick="openModal(this.src)" />
+        <p class="caption">Stabilizer</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab12.jpg" alt="Lab Image 12" onclick="openModal(this.src)" />
+        <p class="caption">Projecter</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab13.jpg" alt="Lab Image 13" onclick="openModal(this.src)" />
+        <p class="caption">Lightex Fire</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab14.jpg" alt="Lab Image 14" onclick="openModal(this.src)" />
+        <p class="caption">FY.B.Sc Class Room</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab15.jpg" alt="Lab Image 15" onclick="openModal(this.src)" />
+        <p class="caption">SY.B.Sc Class Room</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab16.jpg" alt="Lab Image 16" onclick="openModal(this.src)" />
+        <p class="caption">TY.B.Sc Class Room</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab17.jpg" alt="Lab Image 17" onclick="openModal(this.src)" />
+        <p class="caption">Details Configuration Of Computer</p>
+      </div>
+      <div class="gallery-item">
+        <img src="images/Lab Gallery/lab18.jpg" alt="Lab Image 18" onclick="openModal(this.src)" />
+        <p class="caption">Details Configuration Of Computer</p>
+      </div>
     </div>
-</section>
+  </section>
 
+ <footer class="footer">
+    <div class="footer-container">
+     <div class="footer-column">
+        <h3>About</h3>
+        <p>
+          According to rule of NMU Jalgoan the college has started from 10th July 2001 from accademic year 2001-2002,
+          with computer science and from the academic year 2004-2005 we have enhanced our tries and got the success to
+          start the latest and most useful field - Biotechnology
+        </p>
+      </div>
 
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>
+          Science Sr. College, Shahada<br>
+          Dist. Nandurbar, Maharashtra<br>
+          Email: info@stcollege.aDr. Vishram Kaka educational campus science sr. college shahada
+          Dist. Nandurbar, Maharashtra 425409
+          +91 8788356600
+          02565- 223122
+          stcopscience@gmail.comc.in<br>
+          Phone: +91-1234567890
+        </p>
+      </div>
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-container">
-
-    <!-- About Section -->
     <div class="footer-column">
-      <h3>About</h3>
-      <p>
-        According to rule of NMU Jalgoan the college has started from 10th July 2001 from accademic year 2001-2002, with computer science and from the academic year 2004-2005 we have enhanced our tries and got the success to start the latest and most useful field - Biotechnology
-      </p>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Faculty</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
     </div>
 
-    <!-- Contact Section -->
-    <div class="footer-column">
-      <h3>Contact Us</h3>
-      <p>
-        Science Sr. College, Shahada<br>
-        Dist. Nandurbar, Maharashtra<br>
-        Email: info@stcollege.aDr. Vishram Kaka educational campus science sr. college shahada
-Dist. Nandurbar, Maharashtra 425409
-+91 8788356600
-02565- 223122
-stcopscience@gmail.comc.in<br>
-        Phone: +91-1234567890
-      </p>
+    <div class="footer-bottom">
+      <p>&copy; 2025 B.Sc. Computer Science Department. [ Create by Premkumar Patil ❤ ]</p>
     </div>
+  </footer>
 
-    <!-- Quick Links -->
-    <div class="footer-column">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Faculty</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
   </div>
-
-  <div class="footer-bottom">
-    <p>&copy; 2025 B.Sc. Computer Science Department. [ Create by Premkumar Patil ❤ ]</p>
-  </div>
-</footer>
-
-<!-- Add this just before </body> -->
-<div id="imageModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="modalImage">
-</div>
 
   <script src="script.js"></script>
 </body>
+
 </html>

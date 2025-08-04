@@ -1,71 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Computer Lab - B.Sc. CS Department</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-<!-- Header Top -->
-<div class="header-top">
-  <img src="images/logo.png" alt="College Logo" class="logo-left" />
 
-  <div class="header-texts">
-    <h2 class="college-name">Shahada Taluka Educational Society and Co-Op. Educational Society’s Ltd.</h2>
-    <h1 class="dept-title-left">B.Sc. Computer Science Department</h1>
+  <div class="header-top">
+    <img src="images/logo.png" alt="College Logo" class="logo-left" />
+
+    <div class="header-texts">
+      <h2 class="college-name">Shahada Taluka Educational Society and Co-Op. Educational Society’s Ltd.</h2>
+      <h1 class="dept-title-left">B.Sc. Computer Science Department</h1>
+    </div>
+
+    <div class="header-controls">
+      <div id="date-time" class="date-time-3d">Loading time...</div>
+    </div>
   </div>
 
-  <div class="header-controls">
-    <div id="date-time" class="date-time-3d">Loading time...</div>
-  </div>
-</div>
+  <header class="navbar-section">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="department_team.html">Department Team</a></li>
+
+        <li class="dropdown">
+          <a href="#" id="lab-toggle">Lab</a>
+          <ul class="dropdown-menu" id="lab-menu">
+            <li><a href="labs.html">Lab Information</a></li>
+            <li><a href="lab_gallery.html">Lab Gallery</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" id="downloads-toggle">Student</a>
+          <ul class="dropdown-menu" id="downloads-menu">
+            <li><a href="syllabus.html">Syllabus</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="student-corner.html">Student Corner</a></li>
+          </ul>
+        </li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
 
-
-<!-- Navbar Section -->
-<header class="navbar-section">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="courses.html">Courses</a></li>
-     <li><a href="department_team.html">Department Team</a></li>
-      <!-- Lab with Dropdown -->
-     <li class="dropdown">
-  <a href="#" id="lab-toggle">Lab</a>
-  <ul class="dropdown-menu" id="lab-menu">
-    <li><a href="labs.html">Lab Information</a></li>
-    <li><a href="lab_gallery.html">Lab Gallery</a></li>
-  </ul>
-</li>
-
-      <!-- Downloads with Dropdown -->
-     <li class="dropdown">
-  <a href="#" id="downloads-toggle">Student</a>
-  <ul class="dropdown-menu" id="downloads-menu">
-    <li><a href="syllabus.html">Syllabus</a></li>
-    <li><a href="timetable.html">Timetable</a></li>
-    <li><a href="student-corner.html">Student Corner</a></li>
-  </ul>
-</li>
-
-
-
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-</header>
-
-  <!-- Lab Section -->
   <section class="lab-section">
     <h1>Computer Lab</h1>
-    <p class="intro">Our well-equipped computer lab supports practical learning with the latest hardware and software.</p>
+    <p class="intro">Our well-equipped computer lab supports practical learning with the latest hardware and software.
+    </p>
 
-    <!-- Lab Images -->
     <div class="lab-images">
       <img src="images/Lab Gallery/lab1.jpg" alt="Lab Image 1">
       <img src="images/Lab Gallery/lab2.jpg" alt="Lab Image 2">
-      
+
     </div>
 
     <!-- Equipment -->
@@ -82,36 +78,93 @@
     <h2>System Configuration</h2>
     <h2>Lab No. 1</h2>
     <table class="lab-software">
-  <tr><th>Component</th><th>Details</th></tr>
-  <tr><td>Model Name</td><td>VIP ATX Cabinet Destop Computer</td></tr>
-  <tr><td>Processor</td><td>Intel Core 2 Duo 3.00 GHz</td></tr>
-  <tr><td>RAM</td><td>4 GB DDR3</td></tr>
-  <tr><td>Hard-Disk Capacity</td><td>256 GB SSD</td></tr>
-  <tr><td>Quantity</td><td>10</td></tr>
-  <tr><td>O/S Type</td><td>Windows 10 Pro 64-bit</td></tr>
-</table>
+      <tr>
+        <th>Component</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Model Name</td>
+        <td>VIP ATX Cabinet Destop Computer</td>
+      </tr>
+      <tr>
+        <td>Processor</td>
+        <td>Intel Core 2 Duo 3.00 GHz</td>
+      </tr>
+      <tr>
+        <td>RAM</td>
+        <td>4 GB DDR3</td>
+      </tr>
+      <tr>
+        <td>Hard-Disk Capacity</td>
+        <td>256 GB SSD</td>
+      </tr>
+      <tr>
+        <td>Quantity</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>O/S Type</td>
+        <td>Windows 10 Pro 64-bit</td>
+      </tr>
+    </table>
 
-    
+
     <h2>Lab No. 2,3,4</h2>
-<table class="lab-software">
-  <tr><th>Component</th><th>Details</th></tr>
-  <tr><td>Model Name</td><td>Lenovo SR 650 Server (Maximum 500 Client)</td></tr>
-  <tr><td>Processor</td><td>Intel Xeon 2.20 GHz</td></tr>
-  <tr><td>RAM</td><td>512 GB With 1 GB Cache</td></tr>
-  <tr><td>Hard-Disk Capacity</td><td>2.4 TB</td></tr>
-  <tr><td>Quantity</td><td>Client -23</td></tr>
-  <tr><td>O/S Type</td><td>Windows Server 2016</td></tr>
-</table>
+    <table class="lab-software">
+      <tr>
+        <th>Component</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Model Name</td>
+        <td>Lenovo SR 650 Server (Maximum 500 Client)</td>
+      </tr>
+      <tr>
+        <td>Processor</td>
+        <td>Intel Xeon 2.20 GHz</td>
+      </tr>
+      <tr>
+        <td>RAM</td>
+        <td>512 GB With 1 GB Cache</td>
+      </tr>
+      <tr>
+        <td>Hard-Disk Capacity</td>
+        <td>2.4 TB</td>
+      </tr>
+      <tr>
+        <td>Quantity</td>
+        <td>Client -23</td>
+      </tr>
+      <tr>
+        <td>O/S Type</td>
+        <td>Windows Server 2016</td>
+      </tr>
+    </table>
 
 
     <!-- Installed Software -->
     <h2>Installed Software</h2>
     <table class="lab-software">
-      <tr><th>Software</th><th>Purpose</th></tr>
-      <tr><td>Python</td><td>Programming & Scripting</td></tr>
-      <tr><td>Java</td><td>Object-Oriented Programming</td></tr>
-      <tr><td>MySQL</td><td>Database Management</td></tr>
-      <tr><td>Turbo C++</td><td>C/C++ Programming</td></tr>
+      <tr>
+        <th>Software</th>
+        <th>Purpose</th>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Programming & Scripting</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>Object-Oriented Programming</td>
+      </tr>
+      <tr>
+        <td>MySQL</td>
+        <td>Database Management</td>
+      </tr>
+      <tr>
+        <td>Turbo C++</td>
+        <td>C/C++ Programming</td>
+      </tr>
     </table>
 
     <!-- Lab Rules -->
@@ -130,56 +183,60 @@
     </div>
   </section>
 
-  
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-container">
 
-    <!-- About Section -->
-    <div class="footer-column">
-      <h3>About</h3>
-      <p>
-        According to rule of NMU Jalgoan the college has started from 10th July 2001 from accademic year 2001-2002, with computer science and from the academic year 2004-2005 we have enhanced our tries and got the success to start the latest and most useful field - Biotechnology
-      </p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- About Section -->
+      <div class="footer-column">
+        <h3>About</h3>
+        <p>
+          According to rule of NMU Jalgoan the college has started from 10th July 2001 from accademic year 2001-2002,
+          with computer science and from the academic year 2004-2005 we have enhanced our tries and got the success to
+          start the latest and most useful field - Biotechnology
+        </p>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>
+          Science Sr. College, Shahada<br>
+          Dist. Nandurbar, Maharashtra<br>
+          Email: info@stcollege.aDr. Vishram Kaka educational campus science sr. college shahada
+          Dist. Nandurbar, Maharashtra 425409
+          +91 8788356600
+          02565- 223122
+          stcopscience@gmail.comc.in<br>
+          Phone: +91-1234567890
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Faculty</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
     </div>
 
-    <!-- Contact Section -->
-    <div class="footer-column">
-      <h3>Contact Us</h3>
-      <p>
-        Science Sr. College, Shahada<br>
-        Dist. Nandurbar, Maharashtra<br>
-        Email: info@stcollege.aDr. Vishram Kaka educational campus science sr. college shahada
-Dist. Nandurbar, Maharashtra 425409
-+91 8788356600
-02565- 223122
-stcopscience@gmail.comc.in<br>
-        Phone: +91-1234567890
-      </p>
+    <div class="footer-bottom">
+      <p>&copy; 2025 B.Sc. Computer Science Department.[ Create by Premkumar Patil ❤ ]</p>
     </div>
-
-    <!-- Quick Links -->
-    <div class="footer-column">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Faculty</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>&copy; 2025 B.Sc. Computer Science Department.[ Create by Premkumar Patil ❤ ]</p>
-  </div>
-</footer>
+  </footer>
 
 
   <script src="script.js"></script>
 </body>
+
 </html>
 
 </body>
+
 </html>
