@@ -67,3 +67,7 @@ function closeModal() {
   const modal = document.getElementById("imageModal");
   modal.style.display = "none";
 }
+
+
+// -----------------------notes----------------------------
+
