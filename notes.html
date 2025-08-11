@@ -156,37 +156,52 @@
     </div>
   </div>
 
-  <script>
-    function filterSubjects() {
-      let searchValue = document.getElementById('search').value.toLowerCase().trim();
-      let cards = document.querySelectorAll('.card');
+  
+  <footer class="footer">
+    <div class="footer-container">
 
-      cards.forEach(card => {
-        let name = card.getAttribute('data-name').toLowerCase();
-        if (name.includes(searchValue)) {
-          card.style.display = "block";
-        } else {
-          card.style.display = "none";
-        }
-      });
-    }
+      <div class="footer-column">
+        <h3>About</h3>
+        <p>
+          According to rule of NMU Jalgoan the college has started from 10th July 2001 from accademic year 2001-2002,
+          with computer science and from the academic year 2004-2005 we have enhanced our tries and got the success to
+          start the latest and most useful field - Biotechnology
+        </p>
+      </div>
 
-    document.getElementById('search').addEventListener('keyup', filterSubjects);
-    document.getElementById('searchBtn').addEventListener('click', filterSubjects);
-    document.getElementById('clearBtn').addEventListener('click', function () {
-      document.getElementById('search').value = "";
-      filterSubjects();
-    });
+      <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>
+          Science Sr. College, Shahada<br>
+          Dist. Nandurbar, Maharashtra<br>
+          Email: info@stcollege.aDr. Vishram Kaka educational campus science sr. college shahada
+          Dist. Nandurbar, Maharashtra 425409
+          +91 8788356600
+          02565- 223122
+          stcopscience@gmail.comc.in<br>
+          Phone: +91-1234567890
+        </p>
+      </div>
 
-    document.querySelectorAll('.card').forEach(card => {
-      card.addEventListener('click', function () {
-        let link = this.getAttribute('data-link');
-        if (link) {
-          window.open(link, '_blank');
-        }
-      });
-    });
-  </script>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Faculty</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
 
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 B.Sc. Computer Science Department. [ Create by Premkumar Patil ❤ ]</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
 </body>
+
 </html>

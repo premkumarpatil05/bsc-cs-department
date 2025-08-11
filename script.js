@@ -72,31 +72,31 @@ function closeModal() {
 // -----------------------notes----------------------------
 
  function filterSubjects() {
-            let searchValue = document.getElementById('search').value.toLowerCase().trim();
-            let cards = document.querySelectorAll('.card');
+      let searchValue = document.getElementById('search').value.toLowerCase().trim();
+      let cards = document.querySelectorAll('.card');
 
-            cards.forEach(card => {
-                let name = card.getAttribute('data-name').toLowerCase();
-                if (name.includes(searchValue)) {
-                    card.style.display = "block";
-                } else {
-                    card.style.display = "none";
-                }
-            });
+      cards.forEach(card => {
+        let name = card.getAttribute('data-name').toLowerCase();
+        if (name.includes(searchValue)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
         }
+      });
+    }
 
-        document.getElementById('search').addEventListener('keyup', filterSubjects);
-        document.getElementById('searchBtn').addEventListener('click', filterSubjects);
-        document.getElementById('clearBtn').addEventListener('click', function () {
-            document.getElementById('search').value = "";
-            filterSubjects();
-        });
+    document.getElementById('search').addEventListener('keyup', filterSubjects);
+    document.getElementById('searchBtn').addEventListener('click', filterSubjects);
+    document.getElementById('clearBtn').addEventListener('click', function () {
+      document.getElementById('search').value = "";
+      filterSubjects();
+    });
 
-        document.querySelectorAll('.card').forEach(card => {
-            card.addEventListener('click', function () {
-                let link = this.getAttribute('data-link');
-                if (link) {
-                    window.open(link, '_blank');
-                }
-            });
-        });
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('click', function () {
+        let link = this.getAttribute('data-link');
+        if (link) {
+          window.open(link, '_blank');
+        }
+      });
+    });
