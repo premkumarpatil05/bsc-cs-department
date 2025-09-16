@@ -1,4 +1,4 @@
-const images = ["images/college.jpg", "images/college2.jpg", "images/college3.jpg"];
+const images = ["images/college.jpg", "images/college3.jpg"];
 let current = 0;
 
 function changeSlide(direction) {
